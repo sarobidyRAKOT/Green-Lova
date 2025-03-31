@@ -1,0 +1,356 @@
+@font-face {
+    font-family: "Nunito-bold";
+    src: url("../fonts/Nunito/Nunito-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face { font-family: "Nunito-light"; src: url("../fonts/Nunito/Nunito-Light.ttf") format("truetype"); font-weight: normal; font-style: normal;}
+@font-face { font-family: "Nunito-medium"; src: url("../fonts/Nunito/Nunito-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal;}
+@font-face { font-family: "Nunito-regular"; src: url("../fonts/Nunito/Nunito-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal;}
+@font-face { font-family: "CormorantGaramond-bold"; src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal;}
+@font-face { font-family: "CormorantGaramond-medium"; src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal;}
+@font-face { font-family: "CormorantGaramond-regular"; src: url("../fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal;}
+
+
+:root {
+    --primary-font-bold : 'Nunito-bold';
+    --primary-font-bold : 'Nunito-light';
+    --primary-font-bold : 'Nunito-medium';
+    --primary-font-bold : 'Nunito-regular';
+
+    --secondary-font-bold: 'CormorantGaramond-bold';
+    --secondary-font-medium: 'CormorantGaramond-medium';
+    --secondary-font-regular: 'CormorantGaramond-regular';
+
+    /* taille police */
+    --px-1 : 3rem   ;
+    --px-2 : 2.5rem;
+    --px-3 : 35px;
+    --px-4 : 30px;
+    --px-5 : 25px;
+    --px-6 : 20px;
+
+    /* COULEUR */
+    --vert-foret-color : #228b5f;
+    --vert-clair-color : #45be8c;
+    --vert-olive-color : #556B2F;
+    --terre-terre-color : #8B4513;
+    --blanc-naturel-color : #e9e6e6;
+    --bleu-ocean-color : #1E90FF;
+
+}
+
+/* ::selection {
+    border-color: var(--vert-clair-color);
+    background-color: #4CAF50; 
+    color: white;
+} */
+
+* {
+    font-family: var(--secondary-font-medium);
+    font-size: 20px;
+}
+
+h1 { font-size: var(--px-1); }
+h2 { font-size: var(--px-2); }
+h3 { font-size: var(--px-3); }
+h4 { font-size: var(--px-4); }
+h5 { font-size: var(--px-5); }
+h6 { font-size: var(--px-6); }
+p, span { font-size: 1.1rem; }
+.titre {
+    font-family: var(--primary-font-bold);
+}
+.simple-text {
+    font-family: var(--secondary-font-medium);
+}
+.font-b { font-weight: bold; }
+.font-n {
+    font-weight: normal;
+}
+
+.btn { 
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-family: var(--primary-font-bold); 
+    font-size: 16px;
+    border-radius: 15px;
+    border: 2px solid var(--vert-clair-color);
+    font-weight: bold;
+}
+
+.btn-sm { 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: var(--primary-font-bold); 
+    font-size: 14px;
+    border-radius: 10px;
+    border: 2px solid var(--vert-clair-color);
+    font-weight: bold;
+}
+
+.text-primary {
+    color: var(--vert-clair-color);
+}
+
+
+.navbar-fixed {
+    position: fixed;
+    top: 0; left: 0;
+    width: 99%;
+    height: 55px;
+    z-index: 1050;
+    background-color: white;
+    display: flex;
+    align-items: center; /* Centre le contenu verticalement */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 5px 10px 10px 10px;
+
+}
+
+
+/* 
+.btn-primary {
+    color: var(--blanc-naturel-color);
+    background-color: var(--vert-foret-color);
+} */
+.btn-primary {
+    color: #0a0a0ad2;
+    /* color: var(--vert-foret-color); */
+    background-color: var(--vert-clair-color);
+}
+
+
+.btn-primary:hover {
+    transition: 0.4s;
+    color: var(--vert-clair-color);
+    background-color: white;
+    border: 2px solid var(--vert-clair-color);
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* .nav-top {
+    display: flex;
+    align-items: center;
+} */
+
+.navig {margin: auto 5px;}
+
+
+
+.logo a {
+    color: var(--vert-clair-color);
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+}
+li {
+    font-family: var(--primary-font-bold);
+    font-size: 15px;
+    color: black;
+}
+
+.navbar-nav {
+    padding-top: 5px;
+}
+
+.navbar-nav a {
+    /* background-color: #228b5f; */
+    margin: 0 15px;
+}
+a .active, .nav-item:hover {
+    /* margin: 0 10px; */
+    /* background-color: #1E90FF; */
+    color: var(--vert-clair-color);
+    transition: 0.2s;
+
+}
+
+
+
+.logo a img {
+
+    height: 30px;
+    width: 30px;
+    /* margin-top: 5px; */
+    display: flex;
+    align-items: center;
+    /* padding-top: 10px; */
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+/* .right {
+    float: left;
+} */
+@media (max-width: 1200px) {
+    .logo {
+        width: 200px;
+    }
+}    
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+  
+
+/* Texte à gauche */
+/* .text-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+} */
+
+/* .text-section p {
+    font-size: 1.2rem;
+    color: #333;
+} */
+
+.section {
+    margin-top: 150px;
+}
+
+/* Effet d'image à droite */
+.image-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image avec découpe diagonale */
+.image-wrapper {
+    width: 100%;
+    height: 550px;
+    background: url('../img/background-acceuil.jpg') center/cover no-repeat;
+
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Crédit de l'image */
+.image-credit {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.detail-section {
+    /* margin: 0; */
+    padding: 0;
+    /* background-color: #228b5f; */
+}
+
+.detail-section .col {
+    /* display: flex; */
+    /* display: flex; Aligne les éléments horizontalement */
+    align-items: center; /* Centre verticalement */
+    gap: 10px; /* Réduit l'espacement entre les éléments */
+    /* background-color: #8B4513; */
+}
+
+
+
+h2 span {
+    font-weight: lighter;
+}
+
+/* .detail-section {
+    margin: 0;
+    padding: 0;
+} */
+
+.detail-section:nth-of-type(2) {
+    position: relative;
+    top: -16px;
+}
+.detail-section .col h2 {
+    margin: 0 4px;
+    padding: 0;
+}
+.detail-section .col h2 span {
+    position: relative;
+    top: -4px;
+}
+
+
+.align-middle {
+    position: relative;
+    top: 2px; /* Ajuste la valeur selon ton besoin */
+}
+
+.image-apropos {
+    width: 100%;
+    height: 550px;
+    background: url('../img/deforestation.jpg') center/cover no-repeat;
+
+    /* clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%); */
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+
+}
+
+.text-success {
+    font-size: var(--px-2);
+    color: var(--vert-clair-color);
+
+    /* font-family: var(--primary-font-bold); */
+}
+
+.section-NousChoisir .content-action {
+    background-color: var(--blanc-naturel-color);
+    border-radius: 10px;
+}
+
+.text-info {
+    color: var(--bleu-ocean-color);
+}
+
+.text-coins {
+    color: #ffbb00;
+}
+
+.text-user {
+    color: #4f1eff;
+}
+
+footer {
+    
+    /* height: 200px; */
+    background-color: #050c1af5;
+    color: white;
+}
+
+footer h5 {
+    color: var(--vert-clair-color);
+    /* background-color: red; */
+}
+
+.reseau a {
+    color: white;
+}
+
+.text-sm {
+    font-size: 15px;
+}
+.text-center {
+    text-align: center;
+}
+
+.text-md {
+    font-size: 18px;
+}   
+/* 
+footer .container .row .col-md-4 {
+    color: var(--vert-clair-color);
+} */
